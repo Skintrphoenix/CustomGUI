@@ -267,6 +267,8 @@ class Main extends PluginBase implements Listener{
         $inventory->setItem(53, Item::get($this->chest2->get("id54"), $this->chest2->get("meta54"), $this->chest2->get("count54"))->setCustomName($this->chest2->get("itemsname54"))->setLore([$this->chest2->get("desc54")]));
 	    $this->chest2g->send($sender);
     }
+
+  }
         
         
         
