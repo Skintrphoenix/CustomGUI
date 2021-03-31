@@ -100,6 +100,116 @@ class Main extends PluginBase implements Listener{
             $this->getServer()->getCommandMap()->dispatch($sender, $this->chest->get("commands1"));
             $sender->sendMessage($this->chest->get("msg1"));
         }
+        if($item->getId() == $this->chest->get("id2") && $item->getDamage() == $this->chest->get("meta2")){
+            $this->getServer()->getCommandMap()->dispatch($sender, $this->chest->get("commands2"));
+            $sender->sendMessage($this->chest->get("msg2"));
+        }
+        if($item->getId() == $this->chest->get("id3") && $item->getDamage() == $this->chest->get("meta3")){
+            $this->getServer()->getCommandMap()->dispatch($sender, $this->chest->get("commands3"));
+            $sender->sendMessage($this->chest->get("msg3"));
+        }
+        if($item->getId() == $this->chest->get("id4") && $item->getDamage() == $this->chest->get("meta4")){
+            $this->getServer()->getCommandMap()->dispatch($sender, $this->chest->get("commands4"));
+            $sender->sendMessage($this->chest->get("msg4"));
+        }
+        if($item->getId() == $this->chest->get("id5") && $item->getDamage() == $this->chest->get("meta5")){
+            $this->getServer()->getCommandMap()->dispatch($sender, $this->chest->get("commands5"));
+            $sender->sendMessage($this->chest->get("msg5"));
+        }
+        if($item->getId() == $this->chest->get("id6") && $item->getDamage() == $this->chest->get("meta6")){
+            $this->getServer()->getCommandMap()->dispatch($sender, $this->chest->get("commands6"));
+            $sender->sendMessage($this->chest->get("msg6"));
+        }
+        if($item->getId() == $this->chest->get("id7") && $item->getDamage() == $this->chest->get("meta7")){
+            $this->getServer()->getCommandMap()->dispatch($sender, $this->chest->get("commands7"));
+            $sender->sendMessage($this->chest->get("msg7"));
+        }
+        if($item->getId() == $this->chest->get("id8") && $item->getDamage() == $this->chest->get("meta8")){
+            $this->getServer()->getCommandMap()->dispatch($sender, $this->chest->get("commands8"));
+            $sender->sendMessage($this->chest->get("msg8"));
+        }
+        if($item->getId() == $this->chest->get("id9") && $item->getDamage() == $this->chest->get("meta9")){
+            $this->getServer()->getCommandMap()->dispatch($sender, $this->chest->get("commands9"));
+            $sender->sendMessage($this->chest->get("msg9"));
+        }
+        if($item->getId() == $this->chest->get("id10") && $item->getDamage() == $this->chest->get("meta10")){
+            $this->getServer()->getCommandMap()->dispatch($sender, $this->chest->get("commands10"));
+            $sender->sendMessage($this->chest->get("msg10"));
+        }
+        if($item->getId() == $this->chest->get("id11") && $item->getDamage() == $this->chest->get("meta11")){
+            $this->getServer()->getCommandMap()->dispatch($sender, $this->chest->get("commands11"));
+            $sender->sendMessage($this->chest->get("msg11"));
+        }
+        if($item->getId() == $this->chest->get("id12") && $item->getDamage() == $this->chest->get("meta12")){
+            $this->getServer()->getCommandMap()->dispatch($sender, $this->chest->get("commands12"));
+            $sender->sendMessage($this->chest->get("msg12"));
+        }
+        if($item->getId() == $this->chest->get("id13") && $item->getDamage() == $this->chest->get("meta13")){
+            $this->getServer()->getCommandMap()->dispatch($sender, $this->chest->get("commands13"));
+            $sender->sendMessage($this->chest->get("msg13"));
+        }
+        if($item->getId() == $this->chest->get("id14") && $item->getDamage() == $this->chest->get("meta14")){
+            $this->getServer()->getCommandMap()->dispatch($sender, $this->chest->get("commands14"));
+            $sender->sendMessage($this->chest->get("msg14"));
+        }
+        if($item->getId() == $this->chest->get("id15") && $item->getDamage() == $this->chest->get("meta15")){
+            $this->getServer()->getCommandMap()->dispatch($sender, $this->chest->get("commands15"));
+            $sender->sendMessage($this->chest->get("msg15"));
+        }
+        if($item->getId() == $this->chest->get("id16") && $item->getDamage() == $this->chest->get("meta16")){
+            $this->getServer()->getCommandMap()->dispatch($sender, $this->chest->get("commands16"));
+            $sender->sendMessage($this->chest->get("msg16"));
+        }
+        if($item->getId() == $this->chest->get("id17") && $item->getDamage() == $this->chest->get("meta17")){
+            $this->getServer()->getCommandMap()->dispatch($sender, $this->chest->get("commands17"));
+            $sender->sendMessage($this->chest->get("msg17"));
+        }
+        if($item->getId() == $this->chest->get("id18") && $item->getDamage() == $this->chest->get("meta18")){
+            $this->getServer()->getCommandMap()->dispatch($sender, $this->chest->get("commands18"));
+            $sender->sendMessage($this->chest->get("msg18"));
+        }
+        if($item->getId() == $this->chest->get("id19") && $item->getDamage() == $this->chest->get("meta19")){
+            $this->getServer()->getCommandMap()->dispatch($sender, $this->chest->get("commands19"));
+            $sender->sendMessage($this->chest->get("msg19"));
+        }
+        if($item->getId() == $this->chest->get("id20") && $item->getDamage() == $this->chest->get("meta20")){
+            $this->getServer()->getCommandMap()->dispatch($sender, $this->chest->get("commands20"));
+            $sender->sendMessage($this->chest->get("msg20"));
+        }
+        if($item->getId() == $this->chest->get("id21") && $item->getDamage() == $this->chest->get("meta21")){
+            $this->getServer()->getCommandMap()->dispatch($sender, $this->chest->get("commands21"));
+            $sender->sendMessage($this->chest->get("msg21"));
+        }
+        if($item->getId() == $this->chest->get("id22") && $item->getDamage() == $this->chest->get("meta22")){
+            $this->getServer()->getCommandMap()->dispatch($sender, $this->chest->get("commands22"));
+            $sender->sendMessage($this->chest->get("msg22"));
+        }
+        if($item->getId() == $this->chest->get("id23") && $item->getDamage() == $this->chest->get("meta23")){
+            $this->getServer()->getCommandMap()->dispatch($sender, $this->chest->get("commands23"));
+            $sender->sendMessage($this->chest->get("msg23"));
+        }
+        if($item->getId() == $this->chest->get("id24") && $item->getDamage() == $this->chest->get("meta24")){
+            $this->getServer()->getCommandMap()->dispatch($sender, $this->chest->get("commands24"));
+            $sender->sendMessage($this->chest->get("msg24"));
+        }
+        if($item->getId() == $this->chest->get("id25") && $item->getDamage() == $this->chest->get("meta25")){
+            $this->getServer()->getCommandMap()->dispatch($sender, $this->chest->get("commands25"));
+            $sender->sendMessage($this->chest->get("msg25"));
+        }
+        if($item->getId() == $this->chest->get("id26") && $item->getDamage() == $this->chest->get("meta26")){
+            $this->getServer()->getCommandMap()->dispatch($sender, $this->chest->get("commands26"));
+            $sender->sendMessage($this->chest->get("msg26"));
+        }
+        if($item->getId() == $this->chest->get("id27") && $item->getDamage() == $this->chest->get("meta27")){
+            $this->getServer()->getCommandMap()->dispatch($sender, $this->chest->get("commands27"));
+            $sender->sendMessage($this->chest->get("msg27"));
+        }
+    }
+    
+    
+        
+        
+        
 	
 	
 
