@@ -170,33 +170,33 @@
 #the command was run for player (not console)
 #if you set to 0, you blank it
 #if you need to not type anything, you blank it
-"commands1": say hello
-"commands2": say hello
-"commands3": say hello
-"commands4": say hello
-"commands5": say hello
-"commands6": say hello
-"commands7": say hello
-"commands8": say hello
-"commands9": say hello
-"commands10": say hello
-"commands11": say hello
-"commands12": say hello
-"commands13": say hello
-"commands14": say hello
-"commands15": say hello
-"commands16": say hello
-"commands17": say hello
-"commands18": say hello
-"commands19": say hello
-"commands20": say hello
-"commands21": say hello
-"commands22": say hello
-"commands23": say hello
-"commands24": say hello
-"commands25": say hello
-"commands26": say hello
-"commands27":
+"commands1": "say hello "
+"commands2": "say hello "
+"commands3": "say hello "
+"commands4": "say hello "
+"commands5": "say hello "
+"commands6": "say hello "
+"commands7": "say hello "
+"commands8": "say hello "
+"commands9": "say hello "
+"commands10": "say hello "
+"commands11": "say hello "
+"commands12": "say hello "
+"commands13": "say hello "
+"commands14": "say hello "
+"commands15": "say hello "
+"commands16": "say hello "
+"commands17": "say hello "
+"commands18": "say hello "
+"commands19": "say hello "
+"commands20": "say hello "
+"commands21": "say hello "
+"commands22": "say hello "
+"commands23": "say hello "
+"commands24": "say hello "
+"commands25": "say hello "
+"commands26": "say hello "
+"commands27": ""
 
 #send message to player
 #if you not to send message, you can type ""
