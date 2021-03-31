@@ -1,47 +1,111 @@
 ---
-#name chest
+#slot of chest is 27
+#name of gui
 "name": "chest"
 
-#item on chest
+
+#item id on chest
 #example:
-#"slot1": id, item meta, count
-#if you need the slot is not items, you can set to 0, 0, 0
-"slot1": 1, 1, 1
-"slot2": 1, 2, 1
-"slot3": 1, 3, 1
-"slot4": 1, 4, 1
-"slot5": 1, 5, 1
-"slot6": 1, 6, 1
-"slot7": 2, 0, 1
-"slot8": 3, 0, 1
-"slot9": 3, 1, 1
+#if you need the id is not items, you can set to 0
+"id1": 1
+"id2": 1
+"id3": 1
+"id4": 1
+"id5": 1
+"id6": 1
+"id7": 2
+"id8": 3
+"id9": 3
 #new line chest
-"slot10": 4, 0, 1
-"slot11": 5, 0, 1
-"slot12": 5, 1, 1
-"slot13": 5, 2, 1
-"slot14": 5, 3, 1
-"slot15": 5, 4, 1
-"slot16": 5, 5, 1
-"slot17": 6, 0, 1
-"slot18": 6, 1, 1
+"id10": 4
+"id11": 5
+"id12": 5
+"id13": 5
+"id14": 5
+"id15": 5
+"id16": 5
+"id17": 6
+"id18": 6
 #new line chest
-"slot19": 6, 2, 1
-"slot20": 6, 3, 1
-"slot21": 6, 4, 1
-"slot22": 6, 5, 1
-"slot23": 7, 0, 1
-"slot24": 12, 0, 1
-"slot25": 13, 0, 1
-"slot26": 14, 0, 1
-"slot27": 0, 0, 0
+"id19": 6
+"id20": 6
+"id21": 6
+"id22": 6
+"id23": 7
+"id24": 12
+"id25": 13
+"id26": 14
+"id27": 0
+
+#item meta
+#if the id you set 0, item meta you set 0
+"meta1": 0
+"meta2": 1
+"meta3": 2
+"meta4": 3
+"meta5": 4
+"meta6": 5
+"meta7": 0
+"meta8": 0
+"meta9": 1
+#new line chest
+"meta10": 0
+"meta11": 0
+"meta12": 1
+"meta13": 2
+"meta14": 3
+"meta15": 4
+"meta16": 5
+"meta17": 0
+"meta18": 1
+#new line chest
+"meta19": 2
+"meta20": 3
+"meta21": 4
+"meta22": 5
+"meta23": 0
+"meta24": 0
+"meta25": 0
+"meta26": 0
+"meta27": 0
+
+#item count
+#if the id you set 0, the count you set 0
+"count1": 1
+"count2": 1
+"count3": 1
+"count4": 1
+"count5": 1
+"count6": 1
+"count7": 1
+"count8": 1
+"count9": 1
+#new line chest
+"count10": 1
+"count11": 1
+"count12": 1
+"count13": 1
+"count14": 1
+"count15": 1
+"count16": 1
+"count17": 1
+"count18": 1
+#new line chest
+"count19": 1
+"count20": 1
+"count21": 1
+"count22": 1
+"count23": 1
+"count24": 1
+"count25": 1
+"count26": 1
+"count27": 0
 
 #custom name item
-#you can set name item on slot1 into 27
-#the number is slot, if the number 1 the slot is 1
+#you can set name item on id1 into 27
 #if you not change the name, you can type "" (not pretty work)
-#if the slot you set 0, 0, 0
-#in the items name, you set "" on slot number you set 0
+#if the id you set 0
+#in the items name, you set "" on id number you set 0
 "itemsname1": "item 1"
 "itemsname2": "item 2"
 "itemsname3": "item 3"
@@ -72,8 +136,8 @@
 
 #desc / lore item
 #if you not change the name, you can type ""
-#if the slot you set 0, 0, 0
-#in the items desc, you set "" on slot number you set 0
+#if the id you set 0
+#in the items desc, you set "" on id number you set 0
 "desc1": ""
 "desc2": ""
 "desc3": ""
@@ -135,7 +199,7 @@
 
 #send message to player
 #if you not to send message, you can type ""
-#if the slot you set 0, you type ""
+#if the id you set 0, you type ""
 #i blank it because i tired :v
 "msg1": ""
 "msg2": ""
