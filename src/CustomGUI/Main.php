@@ -206,7 +206,67 @@ class Main extends PluginBase implements Listener{
         }
     }
     
-    
+    public function openDoubleChest($sender){
+    	$this->chest2g->readonly();
+	    $this->chest2g->setListener([$this, "listenerChest"]);
+        $this->chest2g->setName($this->chest2->get("name"));
+	    $inventory = $this->chest2g->getInventory();
+	    $inventory->setItem(0, Item::get($this->chest2->get("id1"), $this->chest2->get("meta1"), $this->chest2->get("count1"))->setCustomName($this->chest2->get("itemsname1"))->setLore([$this->chest2->get("desc1")]));
+	    $inventory->setItem(1, Item::get($this->chest2->get("id2"), $this->chest2->get("meta2"), $this->chest2->get("count2"))->setCustomName($this->chest2->get("itemsname2"))->setLore([$this->chest2->get("desc2")]));
+	    $inventory->setItem(2, Item::get($this->chest2->get("id3"), $this->chest2->get("meta3"), $this->chest2->get("count3"))->setCustomName($this->chest2->get("itemsname3"))->setLore([$this->chest2->get("desc3")]));
+	    $inventory->setItem(3, Item::get($this->chest2->get("id4"), $this->chest2->get("meta4"), $this->chest2->get("count4"))->setCustomName($this->chest2->get("itemsname4"))->setLore([$this->chest2->get("desc4")]));
+	    $inventory->setItem(4, Item::get($this->chest2->get("id5"), $this->chest2->get("meta5"), $this->chest2->get("count5"))->setCustomName($this->chest2->get("itemsname5"))->setLore([$this->chest2->get("desc5")]));
+	    $inventory->setItem(5, Item::get($this->chest2->get("id6"), $this->chest2->get("meta6"), $this->chest2->get("count6"))->setCustomName($this->chest2->get("itemsname6"))->setLore([$this->chest2->get("desc6")]));
+        $inventory->setItem(6, Item::get($this->chest2->get("id7"), $this->chest2->get("meta7"), $this->chest2->get("count7"))->setCustomName($this->chest2->get("itemsname7"))->setLore([$this->chest2->get("desc7")]));
+        $inventory->setItem(7, Item::get($this->chest2->get("id8"), $this->chest2->get("meta8"), $this->chest2->get("count8"))->setCustomName($this->chest2->get("itemsname8"))->setLore([$this->chest2->get("desc8")]));
+        $inventory->setItem(8, Item::get($this->chest2->get("id9"), $this->chest2->get("meta9"), $this->chest2->get("count9"))->setCustomName($this->chest2->get("itemsname9"))->setLore([$this->chest2->get("desc9")]));
+        $inventory->setItem(9, Item::get($this->chest2->get("id10"), $this->chest2->get("meta10"), $this->chest2->get("count10"))->setCustomName($this->chest2->get("itemsname10"))->setLore([$this->chest2->get("desc10")]));
+        $inventory->setItem(10, Item::get($this->chest2->get("id11"), $this->chest2->get("meta11"), $this->chest2->get("count11"))->setCustomName($this->chest2->get("itemsname11"))->setLore([$this->chest2->get("desc11")]));
+        $inventory->setItem(11, Item::get($this->chest2->get("id12"), $this->chest2->get("meta12"), $this->chest2->get("count12"))->setCustomName($this->chest2->get("itemsname14"))->setLore([$this->chest2->get("desc14")]));
+        $inventory->setItem(12, Item::get($this->chest2->get("id13"), $this->chest2->get("meta13"), $this->chest2->get("count13"))->setCustomName($this->chest2->get("itemsname13"))->setLore([$this->chest2->get("desc13")]));
+        $inventory->setItem(13, Item::get($this->chest2->get("id14"), $this->chest2->get("meta14"), $this->chest2->get("count14"))->setCustomName($this->chest2->get("itemsname14"))->setLore([$this->chest2->get("desc14")]));
+        $inventory->setItem(14, Item::get($this->chest2->get("id15"), $this->chest2->get("meta15"), $this->chest2->get("count15"))->setCustomName($this->chest2->get("itemsname15"))->setLore([$this->chest2->get("desc15")]));
+        $inventory->setItem(15, Item::get($this->chest2->get("id16"), $this->chest2->get("meta16"), $this->chest2->get("count16"))->setCustomName($this->chest2->get("itemsname16"))->setLore([$this->chest2->get("desc16")]));
+        $inventory->setItem(16, Item::get($this->chest2->get("id17"), $this->chest2->get("meta17"), $this->chest2->get("count17"))->setCustomName($this->chest2->get("itemsname17"))->setLore([$this->chest2->get("desc17")]));
+        $inventory->setItem(17, Item::get($this->chest2->get("id18"), $this->chest2->get("meta18"), $this->chest2->get("count18"))->setCustomName($this->chest2->get("itemsname18"))->setLore([$this->chest2->get("desc18")]));
+        $inventory->setItem(18, Item::get($this->chest2->get("id19"), $this->chest2->get("meta19"), $this->chest2->get("count19"))->setCustomName($this->chest2->get("itemsname19"))->setLore([$this->chest2->get("desc19")]));
+        $inventory->setItem(19, Item::get($this->chest2->get("id20"), $this->chest2->get("meta20"), $this->chest2->get("count20"))->setCustomName($this->chest2->get("itemsname20"))->setLore([$this->chest2->get("desc20")]));
+        $inventory->setItem(20, Item::get($this->chest2->get("id21"), $this->chest2->get("meta21"), $this->chest2->get("count21"))->setCustomName($this->chest2->get("itemsname21"))->setLore([$this->chest2->get("desc21")]));
+        $inventory->setItem(21, Item::get($this->chest2->get("id22"), $this->chest2->get("meta22"), $this->chest2->get("count22"))->setCustomName($this->chest2->get("itemsname22"))->setLore([$this->chest2->get("desc22")]));
+        $inventory->setItem(22, Item::get($this->chest2->get("id23"), $this->chest2->get("meta23"), $this->chest2->get("count23"))->setCustomName($this->chest2->get("itemsname23"))->setLore([$this->chest2->get("desc23")]));
+        $inventory->setItem(23, Item::get($this->chest2->get("id24"), $this->chest2->get("meta24"), $this->chest2->get("count24"))->setCustomName($this->chest2->get("itemsname24"))->setLore([$this->chest2->get("desc24")]));
+        $inventory->setItem(24, Item::get($this->chest2->get("id25"), $this->chest2->get("meta25"), $this->chest2->get("count25"))->setCustomName($this->chest2->get("itemsname25"))->setLore([$this->chest2->get("desc25")]));
+        $inventory->setItem(25, Item::get($this->chest2->get("id26"), $this->chest2->get("meta26"), $this->chest2->get("count26"))->setCustomName($this->chest2->get("itemsname26"))->setLore([$this->chest2->get("desc26")]));
+        $inventory->setItem(26, Item::get($this->chest2->get("id27"), $this->chest2->get("meta27"), $this->chest2->get("count27"))->setCustomName($this->chest2->get("itemsname27"))->setLore([$this->chest2->get("desc27")]));
+        $inventory->setItem(27, Item::get($this->chest2->get("id28"), $this->chest2->get("meta28"), $this->chest2->get("count28"))->setCustomName($this->chest2->get("itemsname28"))->setLore([$this->chest2->get("desc28")]));
+	    $inventory->setItem(28, Item::get($this->chest2->get("id29"), $this->chest2->get("meta29"), $this->chest2->get("count29"))->setCustomName($this->chest2->get("itemsname29"))->setLore([$this->chest2->get("desc29")]));
+	    $inventory->setItem(29, Item::get($this->chest2->get("id30"), $this->chest2->get("meta30"), $this->chest2->get("count30"))->setCustomName($this->chest2->get("itemsname30"))->setLore([$this->chest2->get("desc30")]));
+	    $inventory->setItem(30, Item::get($this->chest2->get("id31"), $this->chest2->get("meta31"), $this->chest2->get("count31"))->setCustomName($this->chest2->get("itemsname31"))->setLore([$this->chest2->get("desc31")]));
+	    $inventory->setItem(31, Item::get($this->chest2->get("id32"), $this->chest2->get("meta32"), $this->chest2->get("count32"))->setCustomName($this->chest2->get("itemsname32"))->setLore([$this->chest2->get("desc32")]));
+	    $inventory->setItem(32, Item::get($this->chest2->get("id33"), $this->chest2->get("meta33"), $this->chest2->get("count33"))->setCustomName($this->chest2->get("itemsname33"))->setLore([$this->chest2->get("desc33")]));
+        $inventory->setItem(33, Item::get($this->chest2->get("id34"), $this->chest2->get("meta34"), $this->chest2->get("count34"))->setCustomName($this->chest2->get("itemsname34"))->setLore([$this->chest2->get("desc34")]));
+        $inventory->setItem(34, Item::get($this->chest2->get("id35"), $this->chest2->get("meta35"), $this->chest2->get("count35"))->setCustomName($this->chest2->get("itemsname35"))->setLore([$this->chest2->get("desc35")]));
+        $inventory->setItem(35, Item::get($this->chest2->get("id36"), $this->chest2->get("meta36"), $this->chest2->get("count36"))->setCustomName($this->chest2->get("itemsname36"))->setLore([$this->chest2->get("desc36")]));
+        $inventory->setItem(36, Item::get($this->chest2->get("id37"), $this->chest2->get("meta37"), $this->chest2->get("count37"))->setCustomName($this->chest2->get("itemsname37"))->setLore([$this->chest2->get("desc37")]));
+        $inventory->setItem(37, Item::get($this->chest2->get("id38"), $this->chest2->get("meta38"), $this->chest2->get("count38"))->setCustomName($this->chest2->get("itemsname38"))->setLore([$this->chest2->get("desc38")]));
+        $inventory->setItem(38, Item::get($this->chest2->get("id39"), $this->chest2->get("meta39"), $this->chest2->get("count39"))->setCustomName($this->chest2->get("itemsname39"))->setLore([$this->chest2->get("desc39")]));
+        $inventory->setItem(39, Item::get($this->chest2->get("id40"), $this->chest2->get("meta40"), $this->chest2->get("count40"))->setCustomName($this->chest2->get("itemsname40"))->setLore([$this->chest2->get("desc40")]));
+        $inventory->setItem(40, Item::get($this->chest2->get("id41"), $this->chest2->get("meta41"), $this->chest2->get("count41"))->setCustomName($this->chest2->get("itemsname41"))->setLore([$this->chest2->get("desc41")]));
+        $inventory->setItem(41, Item::get($this->chest2->get("id42"), $this->chest2->get("meta42"), $this->chest2->get("count42"))->setCustomName($this->chest2->get("itemsname42"))->setLore([$this->chest2->get("desc42")]));
+        $inventory->setItem(42, Item::get($this->chest2->get("id43"), $this->chest2->get("meta43"), $this->chest2->get("count43"))->setCustomName($this->chest2->get("itemsname43"))->setLore([$this->chest2->get("desc43")]));
+        $inventory->setItem(43, Item::get($this->chest2->get("id44"), $this->chest2->get("meta44"), $this->chest2->get("count44"))->setCustomName($this->chest2->get("itemsname44"))->setLore([$this->chest2->get("desc44")]));
+        $inventory->setItem(44, Item::get($this->chest2->get("id45"), $this->chest2->get("meta45"), $this->chest2->get("count45"))->setCustomName($this->chest2->get("itemsname45"))->setLore([$this->chest2->get("desc45")]));
+        $inventory->setItem(45, Item::get($this->chest2->get("id46"), $this->chest2->get("meta46"), $this->chest2->get("count46"))->setCustomName($this->chest2->get("itemsname46"))->setLore([$this->chest2->get("desc46")]));
+        $inventory->setItem(46, Item::get($this->chest2->get("id47"), $this->chest2->get("meta47"), $this->chest2->get("count47"))->setCustomName($this->chest2->get("itemsname47"))->setLore([$this->chest2->get("desc47")]));
+        $inventory->setItem(47, Item::get($this->chest2->get("id48"), $this->chest2->get("meta48"), $this->chest2->get("count48"))->setCustomName($this->chest2->get("itemsname48"))->setLore([$this->chest2->get("desc48")]));
+        $inventory->setItem(48, Item::get($this->chest2->get("id49"), $this->chest2->get("meta49"), $this->chest2->get("count49"))->setCustomName($this->chest2->get("itemsname49"))->setLore([$this->chest2->get("desc49")]));
+        $inventory->setItem(49, Item::get($this->chest2->get("id50"), $this->chest2->get("meta50"), $this->chest2->get("count50"))->setCustomName($this->chest2->get("itemsname50"))->setLore([$this->chest2->get("desc50")]));
+        $inventory->setItem(50, Item::get($this->chest2->get("id51"), $this->chest2->get("meta51"), $this->chest2->get("count51"))->setCustomName($this->chest2->get("itemsname51"))->setLore([$this->chest2->get("desc51")]));
+        $inventory->setItem(51, Item::get($this->chest2->get("id52"), $this->chest2->get("meta52"), $this->chest2->get("count52"))->setCustomName($this->chest2->get("itemsname52"))->setLore([$this->chest2->get("desc52")]));
+        $inventory->setItem(52, Item::get($this->chest2->get("id53"), $this->chest2->get("meta53"), $this->chest2->get("count53"))->setCustomName($this->chest2->get("itemsname53"))->setLore([$this->chest2->get("desc53")]));
+        $inventory->setItem(53, Item::get($this->chest2->get("id54"), $this->chest2->get("meta54"), $this->chest2->get("count54"))->setCustomName($this->chest2->get("itemsname54"))->setLore([$this->chest2->get("desc54")]));
+	    $this->chest2g->send($sender);
+    }
         
         
         
