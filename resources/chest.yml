@@ -167,6 +167,7 @@
 "desc27": ""
 
 #commands
+#the command was run for player (not console)
 #if you set to 0, you blank it
 #if you need to not type anything, you blank it
 "commands1": say hello
