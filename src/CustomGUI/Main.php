@@ -488,4 +488,44 @@ class Main extends PluginBase implements Listener{
             $sender->sendMessage($this->chest2->get("msg54"));
         }
     }
- }
+    
+    public function openHopper($sender){
+    	$this->hopperg->readonly();
+	    $this->hopperg->setListener([$this, "listenerHopper"]);
+        $this->hopperg->setName($this->hopper->get("name"));
+        $inventory = $this->hopperg->getInventory();
+        $inventory->setItem(0, Item::get($this->hopper->get("id1"), $this->hopper->get("meta1"), $this->hopper->get("count1"))->setCustomName($this->hopper->get("itemsname1"))->setLore([$this->hopper->get("desc1")]));
+	    $inventory->setItem(1, Item::get($this->hopper->get("id2"), $this->hopper->get("meta2"), $this->hopper->get("count2"))->setCustomName($this->hopper->get("itemsname2"))->setLore([$this->hopper->get("desc2")]));
+	    $inventory->setItem(2, Item::get($this->hopper->get("id3"), $this->hopper->get("meta3"), $this->hopper->get("count3"))->setCustomName($this->hopper->get("itemsname3"))->setLore([$this->hopper->get("desc3")]));
+	    $inventory->setItem(3, Item::get($this->hopper->get("id4"), $this->hopper->get("meta4"), $this->hopper->get("count4"))->setCustomName($this->hopper->get("itemsname4"))->setLore([$this->hopper->get("desc4")]));
+	    $inventory->setItem(4, Item::get($this->hopper->get("id5"), $this->hopper->get("meta5"), $this->hopper->get("count5"))->setCustomName($this->hopper->get("itemsname5"))->setLore([$this->hopper->get("desc5")]));
+	    $this->hopperg->send($sender);
+    }
+    
+    public function listenerHopper(Player $sender, Item $item){
+    	$hand = $sender->getInventory()->getItemInHand()->getCustomName();
+        $inventory = $this->hopperg->getInventory();
+        if($item->getId() == $this->hopper->get("id1") && $item->getDamage() == $this->hopper->get("meta1")){
+            $this->getServer()->getCommandMap()->dispatch($sender, $this->hopper->get("commands1"));
+            $sender->sendMessage($this->hopper->get("msg1"));
+        }
+        if($item->getId() == $this->hopper->get("id2") && $item->getDamage() == $this->hopper->get("meta2")){
+            $this->getServer()->getCommandMap()->dispatch($sender, $this->hopper->get("commands2"));
+            $sender->sendMessage($this->hopper->get("msg2"));
+        }
+        if($item->getId() == $this->hopper->get("id3") && $item->getDamage() == $this->hopper->get("meta3")){
+            $this->getServer()->getCommandMap()->dispatch($sender, $this->hopper->get("commands3"));
+            $sender->sendMessage($this->hopper->get("msg3"));
+        }
+        if($item->getId() == $this->hopper->get("id4") && $item->getDamage() == $this->hopper->get("meta4")){
+            $this->getServer()->getCommandMap()->dispatch($sender, $this->hopper->get("commands4"));
+            $sender->sendMessage($this->hopper->get("msg4"));
+        }
+        if($item->getId() == $this->hopper->get("id5") && $item->getDamage() == $this->hopper->get("meta5")){
+            $this->getServer()->getCommandMap()->dispatch($sender, $this->hopper->get("commands5"));
+            $sender->sendMessage($this->hopper->get("msg5"));
+        }
+    }
+}
+    
+   
