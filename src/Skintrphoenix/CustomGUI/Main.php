@@ -1,6 +1,6 @@
 <?php
 
-namespace CustomGUI;
+namespace Skintrphoenix\CustomGUI;
 
 use pocketmine\plugin\PluginBase;
 use pocketmine\event\Listener;
