@@ -18,18 +18,27 @@ class Main extends PluginBase implements Listener{
 	
 	public function onEnable(){
 		$this->getServer()->getPluginManager()->registerEvents($this, $this);
-		$this->saveResource("chest.yml");
-		$this->saveResource("double-chest.yml");
-		$this->saveResource("hopper.yml");
-        $this->chest = new Config($this->getDataFolder()."chest.yml", Config::YAML);
-        $this->chest2 = new Config($this->getDataFolder()."double-chest.yml", Config::YAML);
-        $this->hopper = new Config($this->getDataFolder()."hopper.yml", Config::YAML);
+		$this->getServer()->getLogger()->Info("§b[§eCustomGUI§b] §aPlugin Enabled");
+		@mkdir($this->getDataFolder() . "Hopper");
+		@mkdir($this->getDataFolder() . "Chest");
+		@mkdir($this->getDataFolder() . "Double_Chest");
+		$this->saveResource("Chest/chest.yml");
+		$this->saveResource("Double_Chest/double-chest.yml");
+		$this->saveResource("Hopper/hopper.yml");
+		$this->config = new Config($this->getDataFolder()."config.yml", Config::YAML);
+        $this->chest = new Config($this->getDataFolder()."Chest/chest.yml", Config::YAML);
+        $this->chest2 = new Config($this->getDataFolder()."Double_Chest/double-chest.yml", Config::YAML);
+        $this->hopper = new Config($this->getDataFolder()."Hopper/hopper.yml", Config::YAML);
         $this->chestg = InvMenu::create(InvMenu::TYPE_CHEST);
 		$this->chest2g = InvMenu::create(InvMenu::TYPE_DOUBLE_CHEST);
 		$this->hopperg = InvMenu::create(InvMenu::TYPE_HOPPER);
 		if(!InvMenuHandler::isRegistered()){
 			InvMenuHandler::register($this);
 		}
+	}
+	
+	public function onDisable(){
+		$this->getServer()->getLogger()->Info("§b[§eCustomGUI§b] §4Plugin Disabled");
 	}
 	
 	public function onCommand(CommandSender $sender, Command $cmd, string $label, array $args) : bool {
@@ -527,5 +536,3 @@ class Main extends PluginBase implements Listener{
         }
     }
 }
-    
-   
