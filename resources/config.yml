@@ -1,0 +1,13 @@
+#you can set true or false
+
+chest: true
+chest2: true
+
+doublechest: true
+doublechest2: true
+
+hopper: true
+hopper2: true
+
+dispenser: true
+dispenser2: true
