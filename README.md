@@ -1,5 +1,5 @@
 # CustomGUI
-## Have 4 type of gui
+## Type of GUI
 - Chest
 - Double Chest
 - Hopper
