@@ -1,68 +1,73 @@
 ---
 #slot of chest is 27
 #name of gui
+player-accept:
+- "ProxgtPro"
+command: "chest2"
+permission: "op"
+
 "name": "chest"
 
 
 #item id on chest
 #example:
 #if you need the id is not items, you can set to 0
-"id1": 1
-"id2": 1
-"id3": 1
-"id4": 1
-"id5": 1
-"id6": 1
-"id7": 2
-"id8": 3
-"id9": 3
+"id1": 219
+"id2": 220
+"id3": 221
+"id4": 222
+"id5": 223
+"id6": 224
+"id7": 225
+"id8": 226
+"id9": 227
 #new line chest
-"id10": 4
-"id11": 5
-"id12": 5
-"id13": 5
-"id14": 5
-"id15": 5
-"id16": 5
-"id17": 6
-"id18": 6
+"id10": 228
+"id11": 229
+"id12": 231
+"id13": 232
+"id14": 233
+"id15": 234
+"id16": 235
+"id17": 236
+"id18": 165
 #new line chest
-"id19": 6
-"id20": 6
-"id21": 6
-"id22": 6
-"id23": 7
-"id24": 12
-"id25": 13
-"id26": 14
-"id27": 0
+"id19": 174
+"id20": 170
+"id21": 171
+"id22": 162
+"id23": 155
+"id24": 38
+"id25": 156
+"id26": 129
+"id27": 103
 
 #item meta
 #if the id you set 0, item meta you set 0
 "meta1": 0
-"meta2": 1
-"meta3": 2
-"meta4": 3
-"meta5": 4
-"meta6": 5
+"meta2": 0
+"meta3": 0
+"meta4": 0
+"meta5": 0
+"meta6": 0
 "meta7": 0
 "meta8": 0
-"meta9": 1
+"meta9": 0
 #new line chest
 "meta10": 0
 "meta11": 0
-"meta12": 1
-"meta13": 2
-"meta14": 3
-"meta15": 4
-"meta16": 5
+"meta12": 0
+"meta13": 0
+"meta14": 0
+"meta15": 0
+"meta16": 0
 "meta17": 0
-"meta18": 1
+"meta18": 0
 #new line chest
-"meta19": 2
-"meta20": 3
-"meta21": 4
-"meta22": 5
+"meta19": 0
+"meta20": 0
+"meta21": 0
+"meta22": 0
 "meta23": 0
 "meta24": 0
 "meta25": 0
@@ -99,7 +104,7 @@
 "count24": 1
 "count25": 1
 "count26": 1
-"count27": 0
+"count27": 1
 
 #custom name item
 #you can set name item on id1 into 27
