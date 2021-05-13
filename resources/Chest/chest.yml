@@ -1,6 +1,11 @@
 ---
 #slot of chest is 27
 #name of gui
+player-accept:
+- "ProxgtPro"
+command: "chest"
+permission: "op"
+
 "name": "chest"
 
 
