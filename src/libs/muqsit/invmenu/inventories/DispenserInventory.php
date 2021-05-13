@@ -1,0 +1,46 @@
+<?php
+
+/*
+ *  ___            __  __
+ * |_ _|_ ____   _|  \/  | ___ _ __  _   _
+ *  | || '_ \ \ / / |\/| |/ _ \ '_ \| | | |
+ *  | || | | \ V /| |  | |  __/ | | | |_| |
+ * |___|_| |_|\_/ |_|  |_|\___|_| |_|\__,_|
+ *
+ * This program is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU Lesser General Public License as published by
+ * the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
+ *
+ * @author Muqsit
+ * @link http://github.com/Muqsit
+ *
+*/
+
+namespace libs\muqsit\invmenu\inventories;
+
+use pocketmine\block\Block;
+use pocketmine\network\mcpe\protocol\types\WindowTypes;
+
+class DispenserInventory extends SingleBlockInventory{
+
+	public function getBlock() : Block{
+		return Block::get(Block::DISPENSER);
+	}
+
+	public function getNetworkType() : int{
+		return WindowTypes::DISPENSER;
+	}
+
+	public function getTileId() : string{
+		return "Dispenser";
+	}
+
+	public function getName() : string{
+		return "Dispenser";
+	}
+
+	public function getDefaultSize() : int{
+		return 9;
+	}
+}
