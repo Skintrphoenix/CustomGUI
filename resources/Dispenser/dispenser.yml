@@ -1,6 +1,11 @@
 ---
 #slot of dispenser is 9
 #name of gui
+player-accept:
+- "ProxgtPro"
+command: "dispenser"
+permission: "op"
+
 "name": "dispenser"
 
 
